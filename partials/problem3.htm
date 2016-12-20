@@ -1,0 +1,29 @@
+<div class="jumbotron">
+    <h3>Input 8 zeros and 1 one</h3>
+    <form class="form-horizontal">
+        <div class="form-group">
+            <div class="col-sm-1">
+                <input class="form-control" ng-model="grid[0][0]" type="number">
+                <input class="form-control" ng-model="grid[1][0]" type="number">
+                <input class="form-control" ng-model="grid[2][0]" type="number">
+            </div>
+            <div class="col-sm-1">
+                <input class="form-control" ng-model="grid[0][1]" type="number">
+                <input class="form-control" ng-model="grid[1][1]" type="number">
+                <input class="form-control" ng-model="grid[2][1]" type="number">
+            </div>
+            <div class="col-sm-1">
+                <input class="form-control" ng-model="grid[0][2]" type="number">
+                <input class="form-control" ng-model="grid[1][2]" type="number">
+                <input class="form-control" ng-model="grid[2][2]" type="number">
+            </div>
+        </div>
+        <div class="form-group"> 
+            <div class="col-sm-12">
+                <button type="button" class="btn btn-default" ng-click="execProblem3()">Run it!</button>
+            </div>
+        </div>
+    </form>
+
+    <div class="alert alert-success" role="alert">Result: {{problemResult3}}</div>
+</div>

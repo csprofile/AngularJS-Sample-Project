@@ -1,0 +1,23 @@
+<div class="jumbotron">
+    <form class="form-horizontal">
+        <div class="form-group">
+            <label class="control-label col-sm-3" for="talk">Text to function "talk()"</label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control" id="talk" placeholder="Enter the text" ng-model="talkStr">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-3" for="before">Text to function "before()"</label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control" id="before" placeholder="Enter the text" ng-model="beforeStr">
+            </div>
+        </div>
+        <div class="form-group"> 
+            <div class="col-sm-offset-3 col-sm-9">
+                <button type="button" class="btn btn-default" ng-click="execProblem1(talkStr,beforeStr)">Run it!</button>
+            </div>
+        </div>
+    </form>
+
+    <div class="alert alert-success" role="alert">Result: {{problemResult1}}</div>
+</div>

@@ -1,0 +1,35 @@
+<div class="jumbotron">
+    <h1>Science news</h1>
+    <p>
+        Researchers at the University of Massachusetts discovered yesterday morning through tests with the adron collider that the current mathematics we know may not have the correct base for calculations, by colliding two helium        atoms each containing two electrons, the atoms were fused and generated for a fraction of seconds an as yet unidentified element containing five electrons.
+        After analysis, the researchers came up with an algorithm to replicate such an experiment through ordinary computers, would you like to test this algorithm? Just follow the instructions below.
+    </p>
+    <div class="alert alert-success" role="alert">{{message}}</div>
+    <form class="form-horizontal">
+        <div class="form-group">
+            <div class="col-sm-1">
+                <p>Num1:</p>
+                <input class="form-control" type="number" ng-model='num1'>
+            </div>
+            <div class="col-sm-1">
+                <p>Oper:</p>
+                <select class="btn btn-default" ng-model='op'>
+                    <option>+</option>
+                    <option>-</option>
+                    <option>*</option>
+                    <option>/</option>
+                </select>
+            </div>
+            <div class="col-sm-1">
+                <p>Num2:</p>
+                <input class="form-control"  type="number" ng-model='num2'>
+            </div>
+        </div>
+        <div class="form-group"> 
+            <div class="col-sm-12">
+                <button type="button" class="btn btn-default" ng-click="execProblem4()">Calc</button>
+            </div>
+        </div>
+    </form>
+    <div class="alert alert-success" role="alert">{{problemResult4}}</div>
+</div>

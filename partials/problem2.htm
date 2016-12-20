@@ -1,0 +1,25 @@
+<div class="jumbotron">
+    <form class="form-horizontal">
+        <div class="form-group">
+            <div class="col-sm-1">
+                <p>Letters:</p>
+                <input class="form-control" ng-model='l1' type="text">
+                <input class="form-control" ng-model='l2' type="text">
+                <input class="form-control" ng-model='l3' type="text">
+            </div>
+            <div class="col-sm-1">
+                <p>Numbers:</p>
+                <input class="form-control" ng-model='n1' type="number">
+                <input class="form-control" ng-model='n2' type="number">
+                <input class="form-control" ng-model='n3' type="number">
+            </div>
+        </div>
+        <div class="form-group"> 
+            <div class="col-sm-12">
+                <button type="button" class="btn btn-default" ng-click="execProblem2()">Run it!</button>
+            </div>
+        </div>
+    </form>
+
+    <div class="alert alert-success" role="alert">Result: {{problemResult2}}</div>
+</div>

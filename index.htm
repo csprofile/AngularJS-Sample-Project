@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-us" ng-app="myApp">
+    <head>
+        <title>Sample Project</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/boostrap.custom.css" />
+
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.9/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.9//angular-route.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <script src="js/app.js"></script>
+        <script src="js/ang-controllers/problem1Controller.js"></script>
+        <script src="js/ang-controllers/problem2Controller.js"></script>
+        <script src="js/ang-controllers/problem3Controller.js"></script>
+        <script src="js/ang-controllers/problem4Controller.js"></script>
+        <script src="js/ang-controllers/navController.js"></script>
+    </head>
+    <body>
+
+        <div class="container">
+            <header>
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand" href="#/">Sample Project</a>
+                        </div>
+                        <div id="navbar" class="navbar-collapse collapse">
+                            <ul class="nav navbar-nav navbar-right" ng-controller="HeaderController">
+                                <li  ng-class="{ active: isActive('/problem1') || isActive('/')}"><a ng-href="#problem1">Problem 1</a></li>
+                                <li  ng-class="{ active: isActive('/problem2')}"><a ng-href="#problem2">Problem 2</a></li>
+                                <li  ng-class="{ active: isActive('/problem3')}"><a ng-href="#problem3">Problem 3</a></li>
+                                <li  ng-class="{ active: isActive('/problem4')}"><a ng-href="#problem4">Problem 4</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+
+            <div ng-view></div>
+
+        </div>
+
+    </body>
+</html>
